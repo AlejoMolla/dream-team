@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- General Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <!-- Navbar -->
+    <div class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <button class="btn-normalize" type="button" data-bs-toggle="collapse" data-bs-target="#menuDesplegable">
+                    <i class="fa-solid fa-bars mt-1 fa-24"></i>
+                </button>
+                <a href="#" class="navbar-brand mb-0 ms-2 h2">Dream Team</a>
+            </div>
+            
+            <button class="btn-normalize">
+                <i class="fa-solid fa-cart-shopping fa-18"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú desplegable -->
+    <div class="collapse collapse-horizontal w-100 w-sm-75 w-md-25" id="menuDesplegable">
+        <h2>mario</h2>
+    </div>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bd73d7e981.js" crossorigin="anonymous"></script>
 </body>
 </html>
