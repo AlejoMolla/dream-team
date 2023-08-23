@@ -1,0 +1,19 @@
+.titulo{
+    text-align: center;
+}
+.costa{
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    margin-top: 10px;
+}
+
+.borde{
+    margin-left: 12.5px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.ggl, .fb, .gh{
+    display: inline-block;
+}
