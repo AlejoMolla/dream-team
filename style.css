@@ -34,6 +34,11 @@
     }
 }
 
+#masVendido {
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+}
+
 /* Row Content */
 .row-content {
     min-height: 100vh;

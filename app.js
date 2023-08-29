@@ -4,7 +4,7 @@ const masVendidosDiv = document.getElementById("masVendido");
 // Genera una Card del Producto y la devuelve
 function CardHTML(nombre, descripcion, imagen) {
     return `
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
         <div class="card">
             <img src="${imagen.src}" alt="${imagen.alt}" class="card-img-top">
             <div class="card-body">
