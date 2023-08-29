@@ -12,7 +12,7 @@
 <body>
     
     <!-- Navbar -->
-    <div class="navbar bg-body-tertiary">
+    <div class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <div class="d-flex align-items-center">
                 <button class="btn-normalize" type="button" data-bs-toggle="collapse" data-bs-target="#menuDesplegable">
@@ -46,11 +46,18 @@
     </div>
     
     <!-- Contenido -->
-    
+    <div class="container pt-5 pt-lg-0">
+        <div class="row row-content mt-5 mt-lg-0" id="masVendido">
+            <!-- JavaScript Render -->
+            <!-- Cosa por Hacer !!!!!! Arreglar el contenedor, porque cuando la pantalla es más grande la navbar tapa las cards -->
+        </div>
+    </div>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bd73d7e981.js" crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="app.js" type="module"></script>
 </body>
 </html>
