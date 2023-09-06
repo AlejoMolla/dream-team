@@ -1,67 +1,278 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
-    <!-- Bootstrap 5 CSS -->
+    <title>Dream Team</title>
+    <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <!-- General Styles -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Global css -->
+    <link rel="stylesheet" href="globals.css">
 </head>
 <body>
     
-    <!-- Navbar -->
-    <div class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <div class="d-flex align-items-center">
-                <button class="btn-normalize" type="button" data-bs-toggle="collapse" data-bs-target="#menuDesplegable">
-                    <i class="fa-solid fa-bars mt-1 fa-24"></i>
-                </button>
-                <a href="#" class="navbar-brand mb-0 ms-2 h2">Dream Team</a>
-            </div>
-            
-            <button class="btn-normalize">
-                <i class="fa-solid fa-cart-shopping fa-18"></i>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid px-4">
+            <a href="./index.html" class="navbar-brand">Dream Team</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-    </div>
 
-    <!-- Menú desplegable -->
-    <div class="collapse collapse-horizontal w-sm-25 bg-body-tertiary" id="menuDesplegable" aria-expanded="false">
-        <ul class="nav flex-column w-100">
-            <li class="nav-item">
-                <a href="#" class="nav-link active">Link</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Link</a>
-            </li>
-        </ul>
-    </div>
-    
+            <!-- Collapse Nav -->
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="collapseNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <!-- Dropdown Item -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Productos
+                        </a>
+                        <!-- Dropdown List -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#Todos" class="dropdown-item">Todos</a></li>
+                            <li><a href="#Recomendados" class="dropdown-item">Recomendados</a></li>
+                            <li><a href="#Promociones" class="dropdown-item">Promociones</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown Item -->
+                    <li class="nav-item dropdown">
+                        <a href="#Materiales" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Materiales
+                        </a>
+                        <!-- Dropdown List -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#Materiales" class="dropdown-item">Todos</a></li>
+                            <li><a href="#" class="dropdown-item">Fertilizantes</a></li>
+                            <li><a href="#" class="dropdown-item">Maderas</a></li>
+                            <li><a href="#" class="dropdown-item">Cereales</a></li>
+                        </ul>
+                    </li>
+                    <!-- Button -->
+                    <button class="btn btn-outline-light">
+                        Cerrar Sesión
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Contenido -->
-    <div class="container pt-5 pt-lg-0">
-        <div class="row align-items-center" id="masVendido">
-            <!-- JavaScript Render -->
-        </div>
-        <div class="row row-content align-items-center py-5" id="ofertas">
-            <div class="bg-primary h-100 w-100">
+    <div class="container">
 
+        <!-- Recomendados -->
+        <div class="row row-content" id="Recomendados">
+            <div class="col-12">
+                <h2><span class="badge bg-danger">Top</span> Recomendados</h2>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Promociones -->
+        <div class="row row-content" id="Promociones">
+            <div class="col-12">
+                <h2><span class="badge bg-danger">Sale</span> Promociones</h2>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Todos -->
+        <div class="row row-content" id="Todos">
+            <div class="col-12">
+                <h2><span class="badge bg-danger">New</span> Todos</h2>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content" id="Materiales">
+            <div class="col-12">
+                <h2><span class="badge bg-danger">New</span> Materiales</h2>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAek_w1ZDC7Ao_yz8acGZPnN1vA6H3uwycUA&usqp=CAU" alt="Image Cap" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Producto</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis repudiandae omnis?
+                        </p>
+                        <a href="#" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap 5 JS -->
+    <!-- Footer -->
+    <div class="container-fluid p-5 pb-4 bg-dark text-light">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <h5>Nosotros</h5>
+                <p>
+                    Dream Team: Tu fuente confiable de fertilizantes, cereales y maderas. Compra y vende en línea con nosotros para una experiencia agrícola y forestal sin complicaciones.
+                </p>
+            </div>
+            <div class="col-12 col-sm-3">
+                <h5>Productos</h5>
+                <ul>
+                    <li><a href="#Todos" class="text-decoration-none text-light">Todos</a></li>
+                    <li><a href="#Recomendados" class="text-decoration-none text-light">Recomendados</a></li>
+                    <li><a href="#Promociones" class="text-decoration-none text-light">Promociones</a></li>
+                </ul>
+                <h5>Materiales</h5>
+                <ul>
+                    <li><a href="#Materiales" class="text-decoration-none text-light">Todos</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Fertilizantes</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Cereales</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Maderas</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-3">
+                <h5>Dream Team</h5>
+                <ul>
+                    <li>Alejito</li>
+                    <li>Guillermo Rubinich</li>
+                    <li>Adriano Silva</li>
+                </ul>
+            </div>
+            <div class="col-12 pt-2 text-center">
+                &copy; Dream Team 2023
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/bd73d7e981.js" crossorigin="anonymous"></script>
-    <!-- My JS -->
-    <script src="app.js" type="module"></script>
 </body>
 </html>
