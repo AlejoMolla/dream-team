@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-10-2023 a las 22:44:12
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 8.1.12
+-- Tiempo de generación: 23-10-2023 a las 07:07:06
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -89,6 +89,7 @@ CREATE TABLE `productos` (
   `Precio` double NOT NULL,
   `Cantidad` int(11) NOT NULL,
   `Descripcion` text NOT NULL,
+  `Imagen` longblob NOT NULL,
   `Categoria_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -158,7 +159,7 @@ ALTER TABLE `ordenes_detalle`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

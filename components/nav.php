@@ -4,15 +4,13 @@
         <h5 class="text-center">Operaciones</h5>
         <ul class="nav flex-column">
             <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ingresar_producto" class="nav-link">Ingresar Producto</a></li>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ver Productos</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ver_producto" class="nav-link">Ver Productos</a></li>
             <hr>
             <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ingresar Categoría</a></li>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Eliminar Categoría</a></li>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Modificar Categoría</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ver Categorías</a></li>
             <hr>
             <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ingresar Cliente</a></li>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Eliminar Cliente</a></li>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Modificar Cliente</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ver Clientes</a></li>
             <hr>
             <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ver Ordenes</a></li>
         </ul>

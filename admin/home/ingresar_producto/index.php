@@ -10,33 +10,36 @@
 
             <div class="col-12 col-sm-10 col-md-8 px-md-5">
 
-                <form class="border rounded p-4 mt-5 mt-md-0" action="index.php" method="post">
+                <form class="border rounded p-4 mt-5 mt-md-0" action="index.php" method="post" enctype="multipart/form-data">
                     <div class="row mb-3">
                         <label for="" class="col-md-3 form-label">Nombre:</label>
-                        <div class="col-md-9">
+                        <div class="col-md-6">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombre del Producto" class="form-control" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="file" class="form-control" name="imagen" id="imagen">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="" class="col-md-3 form-label">Precio:</label>
                         <div class="col-md-9">
-                            <input type="text" name="precio" id="precio" placeholder="Precio del Producto" class="form-control" required>
+                            <input type="number" name="precio" id="precio" placeholder="Precio del Producto" class="form-control" required>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="" class="col-md-3 form-label">Cantidad disponible:</label>
                         <div class="col-md-9">
-                            <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad Disponible" class="form-control" required>
+                            <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad Disponible" class="form-control" required>
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="categoria" class="col-md-3 form-label">Selecciona la categoría:</label>
+                        <label for="categoria" class="col-md-3 form-label">Categoría:</label>
                         <div class="col-md-9">
                             <select name="categoria" id="categoria" class="form-select">
                                 <option selected>Categoría</option>
-                                <option value="Carne">Carne</option>
-                                <option value="Carne">Carne</option>
-                                <option value="Carne">Carne</option>
+                                <option value="Fertilizantes">Fertilizantes</option>
+                                <option value="Cereales">Cereales</option>
+                                <option value="Maderas">Maderas</option>
                             </select>
                         </div>
                     </div>
@@ -62,12 +65,14 @@
             $nombre = $_REQUEST["nombre"];
             $precio = $_REQUEST["precio"];
             $cantidad = $_REQUEST["cantidad"];
-            $categoria = $_REQUEST["categoria"];
             $descripcion = $_REQUEST["descripcion"];
-        
+            $imagen = addslashes(file_get_contents($_FILES['imagen']['tmp_name']));
+            $categoria = $_REQUEST["categoria"];
+
             mysqli_query($conn, "
-                INSERT INTO productos(Nombre, Precio, C
-            ")
+                INSERT INTO productos(Nombre, Precio, Cantidad, Descripcion, Imagen, Categoria_id)
+                VALUES ('$nombre', '$precio', '$cantidad', '$descripcion', '$imagen', '$categoria');
+            ") or die("Problemas al realizar la consulta: " . mysqli_error($conn));
         }
     ?>
 
