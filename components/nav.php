@@ -6,13 +6,13 @@
             <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ingresar_producto" class="nav-link">Ingresar Producto</a></li>
             <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ver_producto" class="nav-link">Ver Productos</a></li>
             <hr>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ingresar Categoría</a></li>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ver Categorías</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ingresar_categoria" class="nav-link">Ingresar Categoría</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ver_categoria" class="nav-link">Ver Categorías</a></li>
             <hr>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ingresar Cliente</a></li>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ver Clientes</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ingresar_cliente" class="nav-link">Ingresar Cliente</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ver_cliente" class="nav-link">Ver Clientes</a></li>
             <hr>
-            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/" class="nav-link">Ver Ordenes</a></li>
+            <li class="nav-item"><a href="/<?= ADMIN_PATH?>/ver_ordenes" class="nav-link">Ver Ordenes</a></li>
         </ul>
     </nav>
 </div>
