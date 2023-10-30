@@ -12,31 +12,6 @@
                 <li class="nav-item">
                     <a href="/<?= XAMPP_PATH?>/index.php" class="nav-link">Inicio</a>
                 </li>
-                <!-- Dropdown Item -->
-                <li class="nav-item dropdown">
-                    <a href="/<?= XAMPP_PATH?>/index.html#Todos" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                        Productos
-                    </a>
-                    <!-- Dropdown List -->
-                    <ul class="dropdown-menu">
-                        <li><a href="/<?= XAMPP_PATH?>/index.php#Todos" class="dropdown-item">Todos</a></li>
-                        <li><a href="/<?= XAMPP_PATH?>/index.php#Recomendados" class="dropdown-item">Recomendados</a></li>
-                        <li><a href="/<?= XAMPP_PATH?>/index.php#Promociones" class="dropdown-item">Promociones</a></li>
-                    </ul>
-                </li>
-                <!-- Dropdown Item -->
-                <li class="nav-item dropdown">
-                    <a href="index.php#Materiales" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                        Materiales
-                    </a>
-                    <!-- Dropdown List -->
-                    <ul class="dropdown-menu">
-                        <li><a href="/<?= XAMPP_PATH?>/pages/materiales.php#Materiales" class="dropdown-item">Todos</a></li>
-                        <li><a href="/<?= XAMPP_PATH?>/pages/materiales.php#Fertilizantes" class="dropdown-item">Fertilizantes</a></li>
-                        <li><a href="/<?= XAMPP_PATH?>/pages/materiales.php#Maderas" class="dropdown-item">Maderas</a></li>
-                        <li><a href="/<?= XAMPP_PATH?>/pages/materiales.php#Cereales" class="dropdown-item">Cereales</a></li>
-                    </ul>
-                </li>
                 <!-- Button -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
@@ -45,10 +20,10 @@
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                         </svg>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <?php /*Hacer que muestre Iniciar Sesión nomas si no está logeado, y que el carrito al pulsar te mande a iniciar sesión*/?>
-                        <li><a href="#" class="dropdown-item">Carrito</a></li>
-                        <li><a href="#" class="dropdown-item">Cerrar Sesión</a></li>
+                        <li><a href="/dream-team/pages/carrito/" class="dropdown-item">Carrito</a></li>
+                        <li><a href="/dream-team/login/" class="dropdown-item">Cerrar Sesión</a></li>
                     </ul>
                 </li>
             </ul>

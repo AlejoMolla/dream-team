@@ -13,7 +13,7 @@
                 <form class="border rounded p-4 mt-5 mt-md-0" action="index.php" method="post" enctype="multipart/form-data">
                     <div class="row mb-3">
                         <label for="" class="col-md-3 form-label">Nombre de la categoria</label>
-                        <div class="col-md-6">
+                        <div class="col-md-9">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombre de la categoria" class="form-control" required>
                         </div>
                        

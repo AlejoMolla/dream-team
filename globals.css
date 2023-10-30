@@ -18,3 +18,9 @@ body {
     font-size: 16px;
     padding: 6px 12px;
 }
+
+.badge-categoria {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

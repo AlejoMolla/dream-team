@@ -26,7 +26,6 @@
 		            					<?= $categoria["Id"] ?>
 		            				</th>
 		            				<td><?= $categoria['Nombre']?></td>
-		            				</td>
 		            			</tr>
  
             				<?php } ?>

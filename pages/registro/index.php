@@ -19,32 +19,41 @@
 
         <div class="section2">
             <main class="form-signin w-100 m-auto">
-                <form>
+                <form action="procesar.php">
                     <h1 class="h3 mb-3 fw-normal titulo">Registrarse</h1>
 
                     <div class="costa form-floating">
-                        <input type="name" class="form-control" id="floatingInput" placeholder="+54 9 9999 9999">
-                        <label class="borde" for="floatingInput">Nombre y Apellido</label>
+                        <input type="name" class="form-control" id="nombre" name="nombre">
+                        <label class="borde" for="nombre">Nombre</label>
+                    </div>
+                    <div class="costa form-floating">
+                        <input type="name" class="form-control" id="apellido" name="apellido">
+                        <label class="borde" for="apellido">Apellido</label>
                     </div>
 
                     <div class="costa form-floating">
-                        <input type="date" class="form-control" id="floatingInput" placeholder="">
-                        <label class="" for="floatingInput">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="nacimiento" name="nacimiento">
+                        <label class="" for="nacimiento">Fecha de Nacimiento</label>
                     </div>
 
                     <div class="costa form-floating">
-                        <input type="gender" class="form-control" id="floatingInput" placeholder="">
-                        <label class="borde" for="floatingInput">Género</label>
+                        <input type="text" class="form-control" id="genero" name="genero">
+                        <label class="borde" for="genero">Género</label>
                     </div>
 
                     <div class="costa form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label class="borde" for="floatingInput">Correo electronico</label>
+                        <input type="gender" class="form-control" id="telefono" name="telefono">
+                        <label class="borde" for="telefono">telefono</label>
                     </div>
 
                     <div class="costa form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label class="borde" for="floatingPassword">Contraseña</label>
+                        <input type="email" class="form-control" id="correo" name="correo">
+                        <label class="borde" for="correo">Correo electronico</label>
+                    </div>
+
+                    <div class="costa form-floating">
+                        <input type="password" class="form-control" id="contraseña" name="contraseña">
+                        <label class="borde" for="contraseña">Contraseña</label>
                     </div>
                     <h2>¿Ya tienes una cuenta? <a href="../login">Inicia sesion</a></h2>
 

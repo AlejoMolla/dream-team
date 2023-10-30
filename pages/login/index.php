@@ -18,33 +18,25 @@
   
         <div class="section2">
             <main class="form-signin w-100 m-auto">
-                <form>
+                <form action="/dream-team/index.php" method="post">
                     <h1 class="h3 mb-3 fw-normal titulo">Iniciar Sesion</h1>
     
                     <div class="costa form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label class="borde" for="floatingInput">Correo electronico</label> 
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                        <label class="borde" for="nombre">Nombre</label> 
                     </div> 
 
                     <div class="costa form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label class="borde" for="floatingPassword">Contraseña</label>
+                        <input type="text" class="form-control" id="nombre" name="apellido">
+                        <label class="borde" for="apellido">Apellido</label> 
+                    </div> 
+
+                    <div class="costa form-floating">
+                        <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password">
+                        <label class="borde" for="contraseña">Contraseña</label>
                     </div>
                 
                     <h2>¿No has iniciado sesion? <a href="../registro">Crea una cuenta</a></h2>
-           
-                    <div class="form-control costa ggl">
-                        <i class="fa-brands fa-google" style="color: #000000;"></i> 
-                        <a href="">Google</a>
-                    </div> 
-                    <div class="form-control costa fb">
-                        <i class="fa-brands fa-facebook" style="color: #000000;"></i>
-                        <a href="">Facebook</a>
-                    </div>
-                    <div class="form-control costa gh">
-                        <i class="fa-brands fa-github" style="color: #000000;"></i>
-                        <a href="">GitHub</a>
-                    </div>
             
                     <button class="btn btn-secondary w-100 py-2" type="submit">Iniciar sesion</button>
                 </form>
