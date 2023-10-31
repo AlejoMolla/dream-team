@@ -4,11 +4,7 @@
 
 <?php
 
-if(isset($_REQUEST['nombre'])) { ?>
-
-<script type="text/javascript">
-    document.cookie = "user=<?= $_REQUEST['nombre']?>";
-</script>
+if($_SESSION['logged'] == "success") { ?>
 
 <?php require_once ROOT_PATH . '/includes/header.php' ?>
 

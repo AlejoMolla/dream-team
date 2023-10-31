@@ -19,7 +19,7 @@
 
         <div class="section2">
             <main class="form-signin w-100 m-auto">
-                <form action="procesar.php">
+                <form action="procesar.php" method="post">
                     <h1 class="h3 mb-3 fw-normal titulo">Registrarse</h1>
 
                     <div class="costa form-floating">

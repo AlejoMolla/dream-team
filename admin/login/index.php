@@ -1,4 +1,4 @@
-<?php include("../../../config.php") ?>
+<?php include("../../config.php") ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +18,12 @@
   
         <div class="section2">
             <main class="center form-signin w-100 m-auto">
-                <form>
+                <form action="verificar.php" method="post">
                     <h1 class="h3 mb-3 fw-normal titulo">Iniciar Sesion como administrador</h1>
     
                     <div class="costa form-floating">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="">
-                        <label class="borde" for="floatingInput">Codigo de acceso</label> 
+                        <input type="text" class="form-control" id="codigo" name="codigo" required>
+                        <label class="borde" for="codigo">Codigo de acceso</label> 
                     </div>       
                     <button class="btn btn-secondary w-100 py-2 costa" type="submit">Iniciar sesion</button>
                 </form>

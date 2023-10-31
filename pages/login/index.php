@@ -18,18 +18,13 @@
   
         <div class="section2">
             <main class="form-signin w-100 m-auto">
-                <form action="/dream-team/index.php" method="post">
+                <form action="verificar.php" method="post">
                     <h1 class="h3 mb-3 fw-normal titulo">Iniciar Sesion</h1>
     
                     <div class="costa form-floating">
-                        <input type="text" class="form-control" id="nombre" name="nombre">
-                        <label class="borde" for="nombre">Nombre</label> 
-                    </div> 
-
-                    <div class="costa form-floating">
-                        <input type="text" class="form-control" id="nombre" name="apellido">
-                        <label class="borde" for="apellido">Apellido</label> 
-                    </div> 
+                        <input type="email" class="form-control" id="correo" name="correo">
+                        <label class="borde" for="correo">Correo</label> 
+                    </div>
 
                     <div class="costa form-floating">
                         <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Password">
