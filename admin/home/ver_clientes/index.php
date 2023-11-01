@@ -29,7 +29,7 @@
 
         						<tr>
 		            				<th>
-		            					<?= $clientes["Nombre"] ?>
+		            					<?= $cliente["Nombre"] ?>
 		            				</th>
 		            				<td>
 		            					<?= $categoria['Apellido']?>
